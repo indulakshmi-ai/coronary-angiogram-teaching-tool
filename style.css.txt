@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+.header {
+  padding: 20px;
+  background: white;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 10px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 220px 1fr 300px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar, .info-panel {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.viewer {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.image-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.image-wrap img {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  border-radius: 10px;
+}
+
+.labels {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.label {
+  position: absolute;
+  background: rgba(37, 99, 235, 0.9);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}

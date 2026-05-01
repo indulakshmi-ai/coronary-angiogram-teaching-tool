@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coronary Fellow Teaching Tool</titltle>
+  " />
+</head>
+<body>
+  <header class="header">
+    <h1>Coronary Angiogram Teaching Tool</h1>
+    <p>Learn to identify coronary vessels from example angiograms.</p>
+    <span class="badge">Educational prototype only</span>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <h2>Cases</h2>
+      <button onclick="loadCase('case1')">Case 1</button>
+      <button onclick="loadCase('case2')">Case 2</button>
+      <button onclick="loadCase('case3')">Case 3</button>
+    </aside>
+
+    <section class="viewer">
+      <div class="image-wrap">
+        <img id="angiogram" src="assets/examples/case1.png" alt="Coronary angiogram example" />
+        <div id="labels" class="labels"></div>
+      </div>
+    </section>
+
+    <aside class="info-panel">
+      <h2 id="case-title">Case 1</h2>
+      <p id="teaching-point">Look for the left main bifurcation into LAD and LCx.</p>
+      <ul id="vessel-list"></ul>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
